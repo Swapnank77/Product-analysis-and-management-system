@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Product Analysis</title>
+    <meta content="Temporary Cloud Storage and File Sharing Service powered by tempCloud" name="description">
+  <meta content="tempcloud,Bhuvan,bhuvan s m,Temporary Cloud, File sharing online" name="keywords">
+ 
+  <link href="../static/img/Logo.png" rel="icon">
+  <link href="../static/img/Logo.png" rel="apple-touch-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../static/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../static/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../static/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../static/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="../static/css/style.css" rel="stylesheet"> 
+
+    <style>
+    
+
+  </style> 
+  
+</head>
+<body>
+
+
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        <h1 class="text-light"><a href="#"><span style="font-family: titili;">Product Analysis</span></a></h1>
+       
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+            <li><a href="{{url_for('home')}}">Home</a></li>
+            <li class="active"><a href="{{url_for('product')}}">Products</a></li>
+            <li><a href="{{url_for('sales')}}">Sales</a></li>
+            <li><a href="{{url_for('analysis')}}">Analysis</a></li>
+            <li ><a href="{{url_for('feedback')}}">Feedback</a></li>
+            <li> <a href="{{url_for('logout')}}">Logout</a></li>
+            
+          
+          
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+ 
+  <section id="features"  class="section-padding pt-40">
+    <div class="container">
+        
+    <div class="section-header text-center">
+    <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s" style="color:#773d1c;font-size:45px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"><b>OUR MOTTO</b></h2>
+    <p class="text pb-20">
+    </p>
+    
+    </div>
+    <div class="row align-items-center">
+    <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+    <div class="content-left">
+    <div class="box-item wow fadeInLeft" data-wow-delay="0.3s">
+    <span class="icon">
+      <a href="{{url_for('ha')}}">
+    <img src="../static/img/img6.png" style="height:150px;" />   
+    </a>
+    </span>
+    
+    <div class="text">
+
+    <h4 style="color:#c75647;">Home appliances</h4>
+    <p></p>
+    </div>
+    </div>
+    <div class="box-item wow fadeInLeft" data-wow-delay="0.6s">
+    <a class="icon">
+      <a href="{{url_for('kitchen')}}">
+        <img src="../static/img/homeapp.png" style="height:150px;" />  
+    </a> 
+    </span>
+    <div class="text">
+    <h4 style="color:#c75647;">Kitchen appliances</h4>
+    <p></p>
+    </div>
+    </div>
+    
+    </div>
+    </div>
+    
+    <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+    <div class="content-right">
+    <div class="box-item wow fadeInRight" data-wow-delay="0.3s">
+    <span class="icon">
+      <a href="{{url_for('electronic')}}">
+        <img src="../static/img/electronic.png" style="height:150px;" /> 
+      </a>
+    </span>
+    <div class="text">
+    <h4 style="color:#c75647;">Electronic devices</h4>
+    <p></p>
+    </div>
+    </div>
+    <div class="box-item wow fadeInRight" data-wow-delay="0.6s">
+    <span class="icon">
+      <a href="{{url_for('furniture')}}">
+        <img src="../static/img/furniture.png" style="height:150px;" /> 
+      </a>
+    </span>
+    <div class="text">
+    <h4 style="color:#c75647;">
+      Furniture</h4>
+    <p></p>
+    </div>
+    </div>
+   
+    </div>
+    </div>
+    </div>
+
+    <div class="row align-items-center">
+        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+        <div class="content-left">
+        <div class="box-item wow fadeInLeft" data-wow-delay="0.3s">
+        <span class="icon">
+          <a href="{{url_for('la')}}">
+        <img src="../static/img/beauty.jpg" style="height:150px;" />   
+          </a>
+        </span>
+        
+        <div class="text">
+        <h4 style="color:#c75647;">Beauty products</h4>
+        <p></p>
+        </div>
+        </div>
+       
+        
+        </div>
+        </div>
+        
+        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+        <div class="content-right">
+        <div class="box-item wow fadeInRight" data-wow-delay="0.3s">
+        <span class="icon">
+          <a href="{{url_for('ma')}}">
+            <img src="../static/img/bags.jpg" style="height:150px;" /> 
+          </a>
+        </span>
+        <div class="text">
+        <h4 style="color:#c75647;">Bags</h4>
+        <p></p>
+        </div>
+        </div>
+       
+       
+        </div>
+        </div>
+        </div>
+ 
+    </div>
+    </section>
+
+
+
+
+  
+
+
+
+
+ 
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+   
+
+       
+
+        <div class="modal fade" id="link" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">File uploaded successfully and  Here's your shareable link  </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <textarea name="text" class="form-control" id="mylink"></textarea>
+        </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-success" name="copy_btn" data-dismiss="modal" onclick="copytoCB2()">Copy to clipboard</button>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="btemp.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+    <script src="../static/vendor/jquery/jquery.min.js"></script>
+    <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="../static/vendor/php-email-form/validate.js"></script>
+    <script src="../static/vendor/counterup/counterup.min.js"></script>
+    <script src="../static/vendor/mobile-nav/mobile-nav.js"></script>
+    <script src="../static/vendor/wow/wow.min.js"></script>
+    <script src="../static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../static/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="../static/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="../static/vendor/venobox/venobox.min.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+
+</body>
+</html>

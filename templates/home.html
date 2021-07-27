@@ -1,0 +1,260 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Product Analysis</title>
+    <meta content="Temporary Cloud Storage and File Sharing Service powered by tempCloud" name="description">
+  <meta content="tempcloud,Bhuvan,bhuvan s m,Temporary Cloud, File sharing online" name="keywords">
+ 
+  <link href="static/img/Logo.png" rel="icon">
+  <link href="static/img/Logo.png" rel="apple-touch-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="static/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="static/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="static/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="static/css/style.css" rel="stylesheet"> 
+
+    <style>
+    .sk {
+      display:none;
+    }
+   .sk.sk-chase {
+     display:flex;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  animation: sk-chase 2.5s infinite linear both;
+}
+
+.sk-chase-dot {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; 
+  animation: sk-chase-dot 2.0s infinite ease-in-out both; 
+}
+
+.sk-chase-dot:before {
+  content: '';
+  display: block;
+  width: 25%;
+  height: 25%;
+  background-color: black;
+  border-radius: 100%;
+  animation: sk-chase-dot-before 2.0s infinite ease-in-out both; 
+}
+
+.sk-chase-dot:nth-child(1) { animation-delay: -1.1s; }
+.sk-chase-dot:nth-child(2) { animation-delay: -1.0s; }
+.sk-chase-dot:nth-child(3) { animation-delay: -0.9s; }
+.sk-chase-dot:nth-child(4) { animation-delay: -0.8s; }
+.sk-chase-dot:nth-child(5) { animation-delay: -0.7s; }
+.sk-chase-dot:nth-child(6) { animation-delay: -0.6s; }
+.sk-chase-dot:nth-child(1):before { animation-delay: -1.1s; }
+.sk-chase-dot:nth-child(2):before { animation-delay: -1.0s; }
+.sk-chase-dot:nth-child(3):before { animation-delay: -0.9s; }
+.sk-chase-dot:nth-child(4):before { animation-delay: -0.8s; }
+.sk-chase-dot:nth-child(5):before { animation-delay: -0.7s; }
+.sk-chase-dot:nth-child(6):before { animation-delay: -0.6s; }
+
+@keyframes sk-chase {
+  100% { transform: rotate(360deg); } 
+}
+
+@keyframes sk-chase-dot {
+  80%, 100% { transform: rotate(360deg); } 
+}
+
+@keyframes sk-chase-dot-before {
+  50% {
+    transform: scale(0.4); 
+  } 100%, 0% {
+    transform: scale(1.0); 
+  } 
+}
+
+  </style> 
+  
+</head>
+<body>
+
+
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        <h1 class="text-light"><a href="#"><span style="font-family: titili;">Product Analysis</span></a></h1>
+       
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="{{url_for('home')}}">Home</a></li>
+          <li><a href="{{url_for('product')}}">Products</a></li>
+          <li><a href="{{url_for('sales')}}">Sales</a></li>
+          <li><a href="{{url_for('analysis')}}">Analysis</a></li>
+          
+          <li><a href="{{url_for('feedback')}}">Feedback</a></li>
+          <li> <a href="{{url_for('logout')}}">Logout</a></li>
+          
+          
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <section id="introo" class="clearfix " >
+    <div class="container">
+
+      <div class="intro-img">
+        
+      </div>
+
+      <div class="intro-info">
+        <h2 style="color:black;"></h2>
+        <div>
+          
+       
+          <!-- <a href="#upload" class="btn-get-started scrollto">Upload now!&nbsp;<i class="fa fa-upload"></i></a> -->
+      
+        </div>
+      </div>
+
+    </div>
+  </section><br>
+
+  <section id="features"  class="section-padding pt-40">
+    <div class="container">
+    <div class="section-header text-center">
+    <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s" style="color:#773d1c;font-size:45px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"><b>OUR MOTTO</b></h2>
+    <p class="text pb-20">
+    </p>
+    
+    </div>
+    <div class="row align-items-center">
+    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+    <div class="content-left">
+    <div class="box-item wow fadeInLeft" data-wow-delay="0.3s">
+    <span class="icon">
+    <img src="../static/img/img6.png" style="height:150px;" />   
+    </span>
+    
+    <div class="text">
+    <h4 style="color:#c75647;">Our Product</h4>
+    <p>Our solution measures shifts in sentiment from customer experience to win back consumers and activate fans. Using machine-powered learning and precise targeting, Apptentive helps enterprise brands capture actionable emotions and feedback from the 90 percent of consumer voices typically missed, and quickly turns that feedback into action.</p>
+    </div>
+    </div>
+    <div class="box-item wow fadeInLeft" data-wow-delay="0.6s">
+    <span class="icon">
+        <img src="../static/img/img7.jpeg" style="height:150px;" />   
+    </span>
+    <div class="text">
+    <h4 style="color:#c75647;">Our Mission</h4>
+    <p>We believe relationships matter. That’s why we’re on a mission to give a voice to every consumer and create better customer experiences for the world’s most popular brands.</p>
+    </div>
+    </div>
+    
+    </div>
+    </div>
+    
+    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+    <div class="content-right">
+    <div class="box-item wow fadeInRight" data-wow-delay="0.3s">
+    <span class="icon">
+        <img src="../static/img/img8.jpg" style="height:150px;" /> 
+    </span>
+    <div class="text">
+    <h4 style="color:#c75647;">How We Work</h4>
+    <p>We hire people, not robots. That’s why we help you balance work with your family, friends, hobbies, and health. We pride ourselves on being adaptable because change is a constant. We make mistakes, learn, appreciate diverse thinking, and improve as we iterate.</p>
+    </div>
+    </div>
+    <div class="box-item wow fadeInRight" data-wow-delay="0.6s">
+    <span class="icon">
+        <img src="../static/img/img10.jpeg" style="height:150px;" /> 
+    </span>
+    <div class="text">
+    <h4 style="color:#c75647;">
+      A Voice for Everyone</h4>
+    <p>We value diversity and strive to fill our office with people of different backgrounds and identities. Our vision is to give a voice to every customer as well as to every employee.</p>
+    </div>
+    </div>
+   
+    </div>
+    </div>
+    </div>
+    
+    </div>
+    </section>
+
+
+
+
+  
+
+
+
+
+ 
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+   
+
+       
+
+        <div class="modal fade" id="link" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">File uploaded successfully and  Here's your shareable link  </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <textarea name="text" class="form-control" id="mylink"></textarea>
+        </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-success" name="copy_btn" data-dismiss="modal" onclick="copytoCB2()">Copy to clipboard</button>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="btemp.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="sttaic/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="static/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="static/vendor/php-email-form/validate.js"></script>
+    <script src="static/vendor/counterup/counterup.min.js"></script>
+    <script src="static/vendor/mobile-nav/mobile-nav.js"></script>
+    <script src="static/vendor/wow/wow.min.js"></script>
+    <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="static/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="static/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="static/vendor/venobox/venobox.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+
+</body>
+</html>
